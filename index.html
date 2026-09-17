@@ -17,17 +17,19 @@
 
         main {
             background: #FFFFFF;
-            color: #183C63
-            text-align: left;
+            color: #183C63 text-align: left;
             max-width: 800px;
             margin: 0 auto;
             border: 5px solid #cf1010;
             padding: 16px
+        }
+
+        article {
             display: flex;
         }
+
         img {
-            width: 80px
-            height: 80px;
+            width: 80px height: 80px;
         }
     </style>
 </head>
@@ -39,28 +41,49 @@
     </header>
 
     <main>
-        <img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um celebro digital brilhante, cercado por icones de wi-fi, circuitos e lãmpada de ideia. Cores em tons de azul e branco"
-    </div>
-        <h2>Primeiro Post</h2>
-        <P CLASS="ARTIGO AUTOR"> Por: Dudis francis</P>
-        <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de tecnologia.
-        </p>
-        <button>🇫🇷<span>0</span>​</button>
-        <button>⭐<span>0</span></button>
-        </diV>
+        <article>
+            <img src="imagem-blog.png"
+                alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um celebro digital brilhante, cercado por icones de wi-fi, circuitos e lãmpada de ideia. Cores em tons de azul e branco">
+            <div>
+                <h2>Primeiro Post</h2>
+                <P CLASS="ARTIGO AUTOR"> Por: Dudis francis</P>
+                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
+                    tecnologia.
+                </p>
+                <button>🇫🇷<span>0</span>​</button>
+                <button>⭐<span>0</span></button>
+            </diV>
+        </article>
+
+        <article>
+            <img src="imagem-blog.png"
+                alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um celebro digital brilhante, cercado por icones de wi-fi, circuitos e lãmpada de ideia. Cores em tons de azul e branco">
+            <div>
+                <h2>Primeiro Post</h2>
+                <P CLASS="ARTIGO AUTOR"> Por: Dudis francis</P>
+                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
+                    tecnologia.
+                </p>
+                <button>🇫🇷<span>0</span>​</button>
+                <button>⭐<span>0</span></button>
+            </diV>
+            </div>
+        </article>
+
+
     </main>
 
-<script>
-    const botao =  document.querySelector("button");
-    botoes.forEach(function (botao){
-    botao.addEventListener("click",botaoClicado);
-     });
+    <script>
+        const botao = document.querySelector("button");
+        botoes.forEach(function (botao) {
+            botao.addEventListener("click", botaoClicado);
+        });
 
-    function botaoClicado(event) {
-        let texto = event.querySelector("span");
-        texto.textContent++;
-    }
-</script>
+        function botaoClicado(event) {
+            let texto = event.currentTarget.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
 
 </body>
 
